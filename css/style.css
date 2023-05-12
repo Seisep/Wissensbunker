@@ -1,0 +1,16 @@
+body {
+    background-color:#060602;
+    font-size: larger;
+  }
+
+  .sidelink {
+
+    padding: 0 .25rem !important;
+    margin: 0 -.25rem !important;
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out !important;
+    text-decoration: none;
+  }
+  .sidelink:hover {
+    color: #ffffff !important;
+    text-decoration-line: underline;
+  }
