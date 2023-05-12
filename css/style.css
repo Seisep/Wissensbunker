@@ -7,10 +7,15 @@ body {
 
     padding: 0 .25rem !important;
     margin: 0 -.25rem !important;
-    transition: color .5s ease-in-out, box-shadow .5s ease-in-out !important;
+    transition: color .0s ease-in-out, box-shadow .0s ease-in-out !important;
     text-decoration: none;
   }
   .sidelink:hover {
-    color: #ffffff !important;
-    text-decoration-line: underline;
+    color: #b78902 !important;
+    text-decoration-line: none;
+    font-weight: 700;
+  }
+
+  .blocksatz {
+    text-align: justify
   }
