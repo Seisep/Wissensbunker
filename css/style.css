@@ -1,21 +1,24 @@
 body {
-    background-color:#060602;
-    font-size: larger;
-  }
+  background-color: #060602;
+  font-size: larger;
+}
 
-  .sidelink {
+.sidelink {
+  padding: 0 .25rem !important;
+  margin: 0 -.25rem !important;  
+  text-decoration: none;
+}
 
-    padding: 0 .25rem !important;
-    margin: 0 -.25rem !important;
-    transition: color .0s ease-in-out, box-shadow .0s ease-in-out !important;
-    text-decoration: none;
-  }
-  .sidelink:hover {
-    color: #b78902 !important;
-    text-decoration-line: none;
-    font-weight: 700;
-  }
+.sidelink:hover {
+  color: #b78902 !important;
+  text-decoration-line: none;
+}
 
-  .blocksatz {
-    text-align: justify
-  }
+.nav-link:hover {
+  color: #b78902 !important;
+  text-decoration-line: none;
+}
+
+.blocksatz {
+  text-align: justify
+}
