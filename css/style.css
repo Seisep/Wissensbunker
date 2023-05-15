@@ -22,3 +22,5 @@ body {
 .blocksatz {
   text-align: justify
 }
+p { hyphens: auto; }
+h1, h2, h3 { hyphens: auto; }
