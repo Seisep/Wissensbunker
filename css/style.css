@@ -20,11 +20,17 @@ body {
 }
 
 .blocksatz {
-  text-align: justify
+  text-align: justify;
+  font-size: 1.5rem;
 }
 .hyphens { hyphens: auto; }
 h1, h2, h3 { hyphens: auto; }
 
-.text1 {
-  font-weight: bold;
+.grey-bg {
+  background-color: rgb(29, 29, 29);
+}
+
+.gold {
+  color: #b78902;
+  font-style: italic;
 }
