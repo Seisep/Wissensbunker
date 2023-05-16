@@ -22,5 +22,9 @@ body {
 .blocksatz {
   text-align: justify
 }
-p { hyphens: auto; }
+.hyphens { hyphens: auto; }
 h1, h2, h3 { hyphens: auto; }
+
+.text1 {
+  font-weight: bold;
+}
