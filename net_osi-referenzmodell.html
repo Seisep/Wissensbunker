@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <title>Netzwerktechnik</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\style.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <div class="row">
+            <img src="img\wissensbunkerbannerunderconstruction.png" class="img-fluid pe-0"
+                alt="Banner Wissensbunker schwarz" id="zumSeitenanfang">
+        </div>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main>
+            <div class="container-fluid mt-4">
+                <div class="row text-white">
+                    <div class="col-md-2 hyphens">
+                        <h3>Ausgang</h3>
+
+                        <!--LINKS EINFÜGEN-->
+                        <p><a href="index.html"
+                                class="sidelink link-light  link-underline-opacity-25 link-underline-opacity-100-hover">Zur
+                                Startseite</a>
+                        </p>
+                        <p><a href="start_netzwerktechnik.html"
+                                class="sidelink link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Zurück
+                                zur Übersicht </a></p>
+
+                        <!--LINKS EINFÜGEN-->
+
+
+                    </div>
+                    <div
+                        class="col-12 order-first order-md-0 col-md-8 text-white blocksatz border border-light rounded grey-bg ms-1">
+                        <!--Contentfeld-->
+                        <h1>Das OSI-Referenzmodell</h1>
+                        <br>
+                        <p>Um die unterschiedlichen Ebenen eines Netzwerks klar zu unterscheiden, greift man auf
+                            <span class="gold">Schichtenmodelle</span>, auch Layer-Modelle genannt, zurück. Das
+                            bekannteste und weitverbreitetste
+                            Schichtenmodell ist das <span class="gold">OSI-Referenzmodell</span> der Internationalen
+                            Standardisierungsorganisation
+                            ISO. OSI steht für <span class="gold"></span>Open System Interconnection, was so viel
+                            bedeutet wie <span class="gold">"Verbindung
+                                zwischen offenen Systemen"</span>. Dieses Modell wurde im Jahr 1978 entworfen und
+                            besteht aus
+                            <span class="gold">sieben Schichten</span>, die hierarchisch angeordnet sind und jeweils
+                            einen spezifischen Aspekt der
+                            Netzwerkkommunikation beschreiben. Die unterste Schicht des Modells ist der Hardwarebereich,
+                            während sich die Anwendungsebene ganz oben befindet. <br><br>
+                           <span class="under"> Bei den sieben Schichten handelt es sich um:</span> <br><br>
+                            1. <span class="gold">Physikalische Schicht / Physical Layer</span>: Diese Schicht
+                            beschäftigt sich mit den physischen Aspekten der
+                            Datenübertragung, wie der Übertragung von Bits über Übertragungsmedien wie Kabel oder
+                            Funkwellen. <br><br>
+
+                            2. <span class="gold">Sicherungsschicht / Data Link Layer</span>: Die Sicherungsschicht ist
+                            für die Fehlererkennung und -korrektur auf der
+                            Bit-Ebene sowie für die Verwaltung des Zugriffs auf das Übertragungsmedium verantwortlich.
+                            Sie verwendet Rahmen, um Daten zwischen benachbarten Netzwerkknoten auszutauschen. <br><br>
+
+                            3. <span class="gold">Netzwerkschicht / Network Layer</span>: Diese Schicht ist für die
+                            Weiterleitung von Datenpaketen im Netzwerk
+                            zuständig. Sie ermöglicht das Routing von Paketen über verschiedene Netzwerke hinweg und
+                            verwendet IP-Adressen, um Geräte zu identifizieren und den Datenfluss zu steuern. <br><br>
+
+                            4. <span class="gold">Transportschicht / Transport Layer</span>: Die Transportschicht bietet
+                            Mechanismen für den zuverlässigen Transport
+                            von Daten zwischen Endpunkten. Sie segmentiert Datenströme in kleinere Einheiten, stellt
+                            sicher, dass alle Segmente erfolgreich ankommen, und überwacht den Fluss der
+                            Datenübertragung. <br><br>
+
+                            5. <span class="gold">Sitzungsschicht / Session Layer</span>: Die Sitzungsschicht ermöglicht
+                            die Einrichtung, Aufrechterhaltung und
+                            Beendigung von Kommunikationssitzungen zwischen Anwendungen. Sie bietet Dienste wie die
+                            Synchronisierung von Datenströmen, den Austausch von Steuerinformationen und die
+                            Wiederherstellung von Sitzungen nach Verbindungsabbrüchen. <br><br>
+
+                            6. <span class="gold">Darstellungsschicht / Presentation Layer</span>: Diese Schicht kümmert
+                            sich um die Darstellung der Daten und deren
+                            Austausch zwischen verschiedenen Systemen. Sie konvertiert Daten in ein für die Übertragung
+                            geeignetes Format und kann Kodierung, Komprimierung und Verschlüsselung umfassen. <br><br>
+
+                            7. <span class="gold">Anwendungsschicht / Application Layer</span>: Die Anwendungsschicht
+                            stellt den Benutzern Dienste und Schnittstellen zur
+                            Verfügung, um auf Netzwerkdienste und -anwendungen zugreifen zu können. Beispiele für
+                            Protokolle auf dieser Ebene sind HTTP für den Webzugriff, SMTP für die E-Mail-Kommunikation
+                            und FTP für den Dateitransfer. <br><br>
+
+                            Das OSI-Referenzmodell ermöglicht eine <span class="gold">klare Trennung der
+                                Netzwerkfunktionen</span> und erleichtert
+                            die Entwicklung, Implementierung und Wartung von Netzwerken. Es dient als Grundlage für die
+                            Entwicklung von Netzwerkprotokollen und -standards und hat dazu
+                            beigetragen, die Interoperabilität zwischen verschiedenen Systemen und Technologien zu
+                            verbessern.
+                        </p>
+                        <p><a href="#zumSeitenanfang"
+                                class="sidelink link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><strong>Spring
+                                    zum Anfang</strong></a></p>
+
+                    </div>
+                    <div class="col-md-2">
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="text-center text-lg-start text-muted">
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            </section>
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase text-white fw-bold mb-4">
+                                Wissensbunker.de
+                            </h6>
+                            <p class="text-white ">
+                                "Man sollte nie soviel zu tun haben, dass man zum Nachdenken keine Zeit mehr hat." <br>-
+                                Georg Christoph Lichtenberg
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase text-white fw-bold mb-4">
+                                Links
+                            </h6>
+                            <p>
+                                <a href="start_hintergrund.html" class="text-reset">Warum tun wir das?</a>
+                            </p>
+                            <p>
+                                <a href="start_impressum.html" class="text-reset">Impressum</a>
+                            </p>
+                            <p>
+                                <a href="start_datenschutzerklärung.html" class="text-reset">Datenschutzerklärung</a>
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase text-white fw-bold mb-4">Kontakt</h6>
+
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                webmaster@wissensbunker.de
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <script src="https://kit.fontawesome.com/276d8ad1a4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

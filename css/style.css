@@ -52,3 +52,7 @@ h1, h2, h3 {
   color: #b78902 !important;
   text-decoration-line: underline;
 }
+
+.under {
+  text-decoration-line: underline;
+}
