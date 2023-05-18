@@ -1,6 +1,9 @@
 body {
-  background-color: #060602;
+  background-color: #000;
   font-size: larger;
+}
+.dark-bg {
+  background-color: #000;
 }
 
 .sidelink {
@@ -20,11 +23,16 @@ body {
 }
 
 .blocksatz {
-  text-align: justify;
+  
   font-size: 1.5rem;
 }
-.hyphens { hyphens: auto; }
-h1, h2, h3 { hyphens: auto; }
+.hyphens { 
+  hyphens: auto; 
+}
+
+h1, h2, h3 { 
+  hyphens: auto; 
+}
 
 .grey-bg {
   background-color: rgb(29, 29, 29);
@@ -33,4 +41,14 @@ h1, h2, h3 { hyphens: auto; }
 .gold {
   color: #b78902;
   font-style: italic;
+}
+
+.uplink {
+  padding: 0 .25rem !important;
+  margin: 0 -.25rem !important;  
+  text-decoration-line: underline;}
+
+.uplink:hover {
+  color: #b78902 !important;
+  text-decoration-line: underline;
 }
