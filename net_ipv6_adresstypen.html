@@ -2,7 +2,7 @@
 <html lang="de">
 
 <head>
-    <title>Netzwerktechnik</title>
+    <title>IPV6 Adresstypen</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,73 +33,83 @@
                             <li style="margin-bottom: 3px;"><a href="index.html"
                                     class="sidelink link-light  link-underline-opacity-25 link-underline-opacity-100-hover">Zur
                                     Startseite</a></li>
-                            <li style="margin-bottom: 3px;"><a href="start_netzwerktechnik.html"
+                            <li style="margin-bottom: 3px;"><a href="net_ipv6_allgemein.html"
                                     class="sidelink link-light  link-underline-opacity-25 link-underline-opacity-100-hover">Zurück
-                                    zu Netzwerktechnik</a></li>
+                                    zu IPv6</a></li>
                             <hr>
-                            <li style="margin-bottom: 3px;"><a href="net_ipv6_adressstruktur.html"
-                                    class="sidelink link-light  link-underline-opacity-25 link-underline-opacity-100-hover">Adressstruktur</a>
-                            </li>
-                            <li style="margin-bottom: 3px;"><a href="net_ipv6_adresstypen.html"
-                                    class="sidelink link-light  link-underline-opacity-25 link-underline-opacity-100-hover">Adresstypen</a>
-                            </li>
                         </ul>
                         <!--LINKS EINFÜGEN-->
                     </div>
                     <div
                         class="col-12 order-first order-md-0 col-md-8 text-white blocksatz border border-light rounded grey-bg ms-1">
                         <!--Contentfeld-->
-                        <h1>Was ist IPv6?</h1>
+                        <h1>Welche Adresstypen gibt es?</h1>
                         <br>
-                        <p>IPv6, das als die nächste Generation des Internet Protocol gilt, spielt eine entscheidende
-                            Rolle in der Weiterentwicklung des Internets. Das Hauptziel von IPv6 besteht darin, den
-                            Mangel an verfügbaren IP-Adressen zu beheben, der durch das ältere IPv4-Protokoll verursacht
-                            wird. IPv4 verwendet 32-Bit-Adressen und kann somit nur eine begrenzte Anzahl von etwa 4,3
-                            Milliarden eindeutigen Adressen unterstützen. Im Vergleich dazu verwendet IPv6
-                            <span class="gold">128-Bit-Adressen </span>, was zu einer immensen Anzahl von rund <span
-                                class="gold"> 340 Sextillionen
-                                eindeutigen Adressen</span> führt. Dadurch werden die Grenzen der Adressierbarkeit
-                            praktisch
-                            aufgehoben. <br><br>
+                        <p><span class="gold">Link-Local-Adresse</span> <br>
+                            FE80::/10 <br>
+                            Bereich: Von FE80 bis FEFB <br> </p>
 
-                            Neben der erweiterten Adressierung bietet IPv6 auch zahlreiche weitere Vorteile. Einer der
-                            bemerkenswertesten Aspekte ist die <span class="gold">verbesserte Sicherheit</span>. IPv6
-                            umfasst standardmäßig
-                            integrierte Sicherheitsmechanismen, die die Vertraulichkeit, Integrität und
-                            Authentifizierung von Datenverbindungen unterstützen. Dies trägt dazu bei, dass das Internet
-                            sicherer und widerstandsfähiger gegenüber Bedrohungen wird. <br><br>
-
-                            Ein weiterer Vorteil von IPv6 ist die <span class="gold">automatische Konfiguration von
-                                Netzwerkgeräten</span>. Das
-                            Protokoll ermöglicht es Geräten, automatisch ihre Netzwerkadressen zu ermitteln und sich mit
-                            dem Netzwerk zu verbinden, ohne manuelle Eingriffe oder die Zuweisung von IP-Adressen durch
-                            einen DHCP-Server. Dies erleichtert die Einrichtung und Verwaltung von Netzwerken erheblich.
-                            <br><br>
-
-                            IPv6 bietet auch eine <span class="gold">verbesserte Unterstützung für Quality of Service
-                                (QoS) und
-                                Multicast-Kommunikation</span>. Durch die Integration von QoS-Mechanismen können
-                            Netzwerkbetreiber
-                            den Datenverkehr priorisieren und sicherstellen, dass bestimmte Dienste oder Anwendungen
-                            bevorzugte Bandbreiten und Verbindungsqualität erhalten. Multicast-Kommunikation wird
-                            ebenfalls effizienter, da IPv6 native Unterstützung für Multicast-Adressen bietet, was die
-                            Verbreitung von Informationen an eine Gruppe von Empfängern erleichtert. <br><br>
-
-                            Obwohl IPv6 seit vielen Jahren existiert, hat die allgemeine Akzeptanz und Implementierung
-                            aufgrund der weit verbreiteten Verwendung von IPv4 und der damit verbundenen Kosten für
-                            Infrastruktur-Upgrades einige Zeit gedauert. Dennoch wächst die Unterstützung für IPv6
-                            stetig, da immer mehr Internetdienstanbieter, Unternehmen und Organisationen die Vorteile
-                            des Protokolls erkennen und die Migration zu IPv6 vorantreiben. <br><br>
-
-                            Die zukünftige Bedeutung von IPv6 im Internet ist unbestreitbar. Angesichts der zunehmenden
-                            Anzahl von Geräten, die mit dem Internet verbunden sind (<span class="gold">Internet of
-                                Things</span>) und der
-                            kontinuierlichen Expansion des Internets in verschiedenen Bereichen wie Cloud Computing,
-                            künstlicher Intelligenz und 5G-Kommunikation wird der <span class="gold">Bedarf an
-                                IP-Adressen weiter steigen</span>.
-                            IPv6 wird daher als das dominierende Protokoll angesehen, das die zukünftigen Anforderungen
-                            an die Adressierung und Kommunikation im Internet erfüllt.
+                        <p> Eine Link-Local-Adresse in IPv6 wird automatisch vom System generiert und für die
+                            Kommunikation innerhalb eines Netzwerksegments verwendet. Das Präfix dieser Adresse ist in
+                            der Regel /10. Die restlichen Bits der Adresse werden entweder durch den Client selbst aus
+                            der <span class="gold">MAC-Adresse und einem Zufallswert</span> gebildet oder komplett
+                            zufällig generiert, abhängig
+                            vom Betriebssystem. Diese Link-Local-Adresse ist nur <span class="gold">innerhalb des
+                                jeweiligen
+                                Netzwerksegments</span> gültig und kann mit einer <span
+                                class="gold">APIPA-Adresse</span> (Automatic Private IP Addressing)
+                            in IPv4 verglichen werden. <br><span class="gold"> Eine Link-Local-Adresse beginnt immer mit
+                                dem
+                                Präfix "FE80"</span>.
                         </p>
+                        <hr>
+                        <p><span class="gold">Multicast-Adresse</span><br>
+                            FF00::1/8 <br>
+                            Bereich: Von FF00 bis FFFF <br></p>
+
+                        <p>Multicast-Adressen in IPv6 dienen als Verteiler, über die <span class="gold"> mehrere Geräte
+                                gleichzeitig</span>
+                            angesprochen werden können. Da IPv6 <span class="gold"></span>keine</span> dedizierte
+                            Broadcast-Adresse hat, wird für diesen
+                            Zweck die Multicast-Adresse verwendet. <br>
+
+                            Es gibt drei wichtige Multicast-Adressen, die <span class="gold"></span>alle Router in einem
+                            Netzwerk</span> ansprechen: <br></p>
+
+                        <p><span class="gold">"FF01::2"</span>: Diese Multicast-Adresse spricht alle Geräte im lokalen
+                            Netzwerk an,
+                            einschließlich der Router. Sie wird für allgemeine Netzwerkdienste verwendet. </p>
+
+                        <p><span class="gold">"FF02::2"</span>: Diese Multicast-Adresse ist speziell für die
+                            Kommunikation zwischen Routern in
+                            einem Netzwerk vorgesehen. Wenn ein Router eine Nachricht an alle anderen Router im Netzwerk
+                            senden möchte, verwendet er diese Adresse. </p>
+
+                        <p><span class="gold">"FF05::2"</span>: Diese Multicast-Adresse ist für sogenannte
+                            "Site-Local-Routen" reserviert. Sie
+                            wird verwendet, um Informationen über die Topologie des Netzwerks an alle Router in einer
+                            bestimmten Site (Standort) zu senden. </p>
+
+                        <p>Durch die Verwendung dieser Multicast-Adressen können Router effizient Informationen an
+                            andere Router im Netzwerk verteilen und so eine effektive Netzwerkkommunikation
+                            gewährleisten.
+                        </p>
+                        <hr>
+                        <p><span class="gold">Global Unicast Adresse</span><br>
+                            2000::/3 <br>
+                            Bereich: Von 2000 bis 3FFF <br></p>
+
+                        <p>Sie ist vergleichbar mit der öffentlichen IP und global absolut einmalig/eindeutig.</p>
+                        <hr>
+                        <p><span class="gold">Loopback-Adresse</span><br>
+                            ::1/128 <br></p>
+                        <p>Die Loopback-Adresse dient dazu, einen <span class="gold"> Netzwerkknoten (Host)</span> zu referenzieren, der auf
+                            derselben Maschine lokalisiert ist. Ähnlich wie bei IPv4 wird die Loopback-Adresse
+                            verwendet, um auf den <span class="gold">eigenen Host</span> zuzugreifen, ohne das Netzwerk zu verlassen.</p>
+                        <p>Die Verwendung der Loopback-Adresse ist besonders nützlich bei der Entwicklung und dem
+                            Testen von Anwendungen, da es möglich ist, die Netzwerkkommunikation zu <span class="gold">simulieren</span>, ohne
+                            eine tatsächliche Verbindung zu externen Geräten oder Netzwerken herstellen zu müssen.</p>
+
                         <p><a href="#zumSeitenanfang"
                                 class="sidelink link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover under"><strong>Spring
                                     zum Anfang</strong></a></p>
