@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <title>Netzwerktechnik</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\style.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <div class="row">
+            <img src="img\wissensbunkerbannerunderconstruction.png" class="img-fluid pe-0"
+                alt="Banner Wissensbunker schwarz" id="zumSeitenanfang">
+        </div>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main>
+            <div class="container-fluid mt-4">
+                <div class="row text-white">
+                    <div class="col-md-2 hyphens">
+                        <h3>DoD-Schichtenmodell</h3>
+
+                        <!--LINKS EINFÜGEN-->
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li style="margin-bottom: 3px;"><a href="index.html"
+                                    class="sidelink link-light  link-underline-opacity-25 link-underline-opacity-100-hover">Zur
+                                    Startseite</a></li>
+                            <li style="margin-bottom: 3px;"><a href="start_netzwerktechnik.html"
+                                    class="sidelink link-light  link-underline-opacity-25 link-underline-opacity-100-hover">Zurück
+                                    zu Netzwerktechnik</a></li>
+                            <hr>
+                        </ul>
+                        <!--LINKS EINFÜGEN-->
+                    </div>
+                    <div
+                        class="col-12 order-first order-md-0 col-md-8 text-white blocksatz border border-light rounded grey-bg ms-1">
+                        <!--Contentfeld-->
+                        <h1>Das DoD-Schichtenmodell</h1>
+                        <br>
+                        <p>Im Bereich der <span class="gold">TCP/IP-Netzwerkprotokolle</span>, die den Standard für das
+                            Betriebssystem Unix und
+                            das Internet darstellen, wird häufig das sogenannte <span class="gold">DoD-Modell</span>
+                            (Department of Defense) oder
+                            <span class="gold">DDN-Modell</span> (Department of Defense Network) verwendet. Dieses
+                            Modell besteht aus <span class="gold">vier</span>
+                            Schichten und ist <span class="gold">besser geeignet</span>, um das Wesen dieser Protokolle
+                            zu erfassen als das
+                            OSI-Modell.
+                        </p>
+
+                        <p> Das DoD-Modell basiert auf dem ursprünglichen Schichtenmodell des <span
+                                class="gold">ARPANET</span>, einem Netzwerk,
+                            das vom US-Verteidigungsministerium finanziert wurde. Da die Internetprotokolle bereits vor
+                            dem OSI-Modell entwickelt wurden, spiegelt das DoD-Modell ihre Funktionsweise und Struktur
+                            besser wider.</p>
+
+                        <p><span class="under"> Die vier Schichten des DoD-Modells lauten:</span> <br><br>
+                            <hr>
+                            - <span class="gold">Netzzugangsschicht</span> (Network Access Layer) <br>Die
+                            Netzzugangsschicht, auch bekannt als Network
+                            Access Layer oder Link Layer, beschreibt den <span class="gold"> physischen
+                                Übertragungsweg</span> der Daten. Auf dieser
+                            Schicht werden verschiedene Protokolle verwendet, da die Internetprotokolle auf nahezu jeder
+                            Art von Netzwerkhardware
+                            implementiert sind. Die eigentlichen Kernprotokolle, wie das Transmission Control Protocol
+                            (TCP) und das Internet
+                            Protocol (IP), kümmern sich nicht um die physischen Aspekte der Übertragung. Daher ist es
+                            erforderlich, dass die <span class="gold"> Bitübertragung</span> und die <span class="gold">
+                                Transportsicherung</span> auf dieser untersten Schicht zuverlässig zur
+                            Verfügung gestellt werden.
+
+                            In diesem Sinne entspricht die Netzzugangsschicht der Internetprotokolle den <span
+                                class="gold"> beiden untersten</span>
+                            Schichten des OSI-Modells.
+                            <hr>
+                            - <span class="gold">Internetschicht</span> (Internet Layer) <br> Die Internetschicht, auch
+                            bekannt als Internet Layer, ähnelt
+                            im Wesentlichen der <span class="gold"> Vermittlungsschicht</span> des OSI-Modells. Ihre
+                            Hauptaufgabe besteht darin, die <span class="gold">logische Adressierung der
+                                Rechner</span> im Netzwerk zu handhaben, um die grundlegende <span
+                                class="gold">Identifizierbarkeit</span> jedes einzelnen Rechners zu gewährleisten.
+                            Eine weitere wichtige Funktion dieser Schicht ist das <span class="gold">Routing</span>,
+                            also die Weiterleitung von Daten über verschiedene
+                            physisch und/oder logisch getrennte Netzwerke. <br><br>
+
+                            Das <span class="gold">IP-Protokoll</span> bildet die Grundlage für diese Aktivitäten. Es
+                            definiert die IP-Adressen, die aus
+                            32-Bit-Nummern bestehen (IPv6 aus 128-Bit-Nummern), um den einzelnen Rechnern zugewiesen zu
+                            werden und zur <span class="gold">Unterscheidung</span> der Netzwerke und Rechner innerhalb
+                            dieser Netzwerke zu dienen. Das IP-Protokoll fügt
+                            jedem Datenpaket einen <span class="gold">Header</span> hinzu, der zusätzliche Informationen
+                            enthält, insbesondere die <span class="gold">Quelladresse</span> des sendenden
+                            Rechners und die <span class="gold">Zieladresse</span> des empfangenden Hosts. Ein
+                            Datenpaket dieser Schicht wird als Datagramm
+                            bezeichnet.
+                            <hr>
+
+                            - <span class="gold">Transportschicht</span>(Transport Layer) <br>Die Transportschicht ist die
+                            dritte Schicht des
+                            DoD-Modells und bietet Dienste zur Übertragung von Daten zwischen <span class="gold">
+                                Endpunkten</span> im Netzwerk. Die
+                            Hauptaufgabe der
+                            Transportschicht besteht darin, sicherzustellen, dass Datenpakete <span
+                                class="gold">zuverlässig und fehlerfrei</span>
+                            übertragen werden. <br><br>
+
+                            Ein wichtiges Protokoll der Transportschicht ist das <span class="gold"></span>Transmission
+                            Control Protocol</span>
+                            (TCP). TCP bietet eine
+                            <span class="gold">verbindungsorientierte</span>, zuverlässige und sequenzielle
+                            Datenübertragung. Es stellt sicher, dass
+                            Datenpakete in der
+                            <span class="gold">richtigen Reihenfolge</span> ankommen, verlorene Pakete automatisch
+                            erneut übertragen werden und eine
+                            <span class="gold">Flusskontrolle</span> zur
+                            Vermeidung von Überlastungen im Netzwerk stattfindet. TCP wird häufig für Anwendungen
+                            verwendet, bei denen eine
+                            zuverlässige Datenübertragung erforderlich ist, z. B. beim Herunterladen von Dateien oder
+                            beim Browsen im Web.<br><br>
+
+                            Ein weiteres Protokoll der Transportschicht ist das <span class="gold">User Datagram
+                                Protocol</span> (UDP). Im Gegensatz
+                            zu TCP ist UDP <span class="gold">nicht
+                                verbindungsorientiert</span> und bietet <span class="gold">keine Zuverlässigkeit oder
+                                Flusskontrolle</span>. Es
+                            ermöglicht eine einfachere, aber weniger
+                            zuverlässige Datenübertragung. UDP wird oft für Echtzeit-Anwendungen verwendet, bei denen
+                            eine geringe Verzögerung
+                            wichtiger ist als die Garantie einer vollständigen Datenübertragung, z. B. bei
+                            Videostreaming oder VoIP (Voice over
+                            IP).<br>
+                            Zusammenfassend ist die Transportschicht im DoD-Modell verantwortlich für die effiziente und
+                            zuverlässige Übertragung
+                            von Daten zwischen Anwendungen auf verschiedenen Endpunkten im Netzwerk.
+                            <hr>
+
+                            - <span class="gold">Anwendungsschicht</span> (Application Layer)<br> Die Anwendungsschicht
+                            ist die oberste Schicht im DoD-Modell. Diese Schicht ist eng mit den <span class="gold"> Anwendungen und
+                            Diensten</span> verbunden, die auf den Hosts im Netzwerk laufen.
+
+                            Die Anwendungsschicht stellt <span class="gold"> Schnittstellen und Protokolle</span> bereit, die es Anwendungen
+                            ermöglichen, miteinander zu kommunizieren und Daten auszutauschen. Sie bietet eine Vielzahl
+                            von Netzwerkdiensten und Protokollen für verschiedene Zwecke, einschließlich E-Mail,
+                            Dateiübertragung, Webseitenzugriff, Remotezugriff, DNS (Domain Name System), DHCP (Dynamic
+                            Host Configuration Protocol) und vieles mehr.
+                            <hr>
+                            Diese vier Schichten sind den <span class="gold">konkreten</span> Gegebenheiten von
+                            TCP/IP-Netzwerken angepasst,
+                            bei denen es zum Beispiel nur <span class="gold"> theoretisch</span> möglich ist, von einer
+                            separaten Sitzungsschicht
+                            zu sprechen. Jede Schicht erfüllt
+                            spezifische Aufgaben und ermöglicht die Kommunikation und den Datenaustausch in einem
+                            TCP/IP-Netzwerk. <br>
+                        </p>
+
+                        <p> Im Vergleich dazu besteht das OSI-Modell aus sieben Schichten und wurde später entwickelt.
+                            Es bietet eine allgemeinere und umfassendere Struktur für Netzwerkprotokolle, wurde jedoch
+                            nicht so weit verbreitet wie das DoD-Modell.</p>
+
+                        <p> Insgesamt kann gesagt werden, dass das DoD-Modell im Bereich der TCP/IP-Netzwerkprotokolle
+                            aufgrund seiner historischen Bedeutung und Anpassung an die Internetprotokolle weit
+                            verbreitet ist und eine <span class="gold">effektive Grundlage</span> für die Kommunikation
+                            in Unix-basierten Systemen
+                            und im Internet bietet.</p>
+                        <p><a href="#zumSeitenanfang"
+                                class="sidelink link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover under"><strong>Spring
+                                    zum Anfang</strong></a></p>
+
+                    </div>
+                    <div class="col-md-2">
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="text-center text-lg-start text-muted">
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            </section>
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase text-white fw-bold mb-4">
+                                Wissensbunker.de
+                            </h6>
+                            <p class="text-white ">
+                                "Man sollte nie soviel zu tun haben, dass man zum Nachdenken keine Zeit mehr hat." <br>-
+                                Georg Christoph Lichtenberg
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase text-white fw-bold mb-4">
+                                Links
+                            </h6>
+                            <p>
+                                <a href="start_hintergrund.html" class="text-reset">Warum tun wir das?</a>
+                            </p>
+                            <p>
+                                <a href="start_impressum.html" class="text-reset">Impressum</a>
+                            </p>
+                            <p>
+                                <a href="start_datenschutzerklärung.html" class="text-reset">Datenschutzerklärung</a>
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase text-white fw-bold mb-4">Kontakt</h6>
+
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                webmaster@wissensbunker.de
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <script src="https://kit.fontawesome.com/276d8ad1a4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
