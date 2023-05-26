@@ -46,57 +46,75 @@
                         <h1>DMZ - Demilitarisierte Zone</h1>
                         <br>
 
-                        <p>Eine DMZ (Demilitarisierte Zone) ist ein Netzwerksegment, das zwischen dem internen Netzwerk
-                            (Intranet) und dem externen Netzwerk (normalerweise das Internet) liegt. Sie dient dazu,
-                            eine zusätzliche Sicherheitsebene zu schaffen und den Zugriff auf interne Ressourcen zu
+                        <p>Eine <span class="gold"> DMZ</span> (Demilitarisierte Zone) ist ein Netzwerksegment, das
+                            zwischen dem <span class="gold">internen Netzwerk</span>
+                            (Intranet) und dem <span class="gold">externen Netzwerk</span> (normalerweise das Internet)
+                            liegt. Sie dient dazu,
+                            eine zusätzliche <span class="gold">Sicherheitsebene</span> zu schaffen und den Zugriff auf
+                            interne Ressourcen zu
                             kontrollieren.
 
-                            Die Einrichtung einer DMZ erfolgt in der Regel durch die Verwendung von Firewalls und
-                            Netzwerkgeräten. Hier sind die grundlegenden Schritte, um eine DMZ einzurichten:</p>
+                            Die Einrichtung einer DMZ erfolgt in der Regel durch die Verwendung von <span
+                                class="gold">Firewalls</span> und
+                            <span class="gold">Netzwerkgeräten</span>.
+                        </p>
+                        <p class="under"> Hier sind die grundlegenden Schritte, um eine DMZ einzurichten:</p>
 
-                        <p> Identifizierung der Ressourcen: Bestimmen Sie, welche Ressourcen in der DMZ platziert werden
+                        <p> - <span class="gold">Identifizierung der Ressourcen</span>: Bestimmen Sie, welche Ressourcen
+                            in der DMZ platziert werden
                             sollen. Dies können öffentlich zugängliche Dienste wie Webserver, E-Mail-Server, FTP-Server
                             oder andere Anwendungen sein, auf die externe Benutzer zugreifen können sollen. </p>
 
-                            Netzwerkdesign: Legen Sie die Netzwerktopologie fest. Die DMZ sollte zwischen dem internen
+                        <p>- <span class="gold">Netzwerkdesign</span>: Legen Sie die Netzwerktopologie fest. Die DMZ
+                            sollte
+                            zwischen dem internen
                             Netzwerk und dem externen Netzwerk positioniert werden. Sie kann physisch mit separaten
-                            Netzwerksegmenten implementiert werden oder virtuell durch die Konfiguration von VLANs
+                            Netzwerksegmenten implementiert werden oder virtuell durch die Konfiguration von <span
+                                class="gold"></span>VLANs
                             (Virtual Local Area Networks) erreicht werden. </p>
 
-                            Firewall-Regeln: Konfigurieren Sie die Firewalls zwischen den Netzwerken. Es sollten
+                        <p> - <span class="gold">Firewall-Regeln</span>: Konfigurieren Sie die Firewalls zwischen den
+                            Netzwerken. Es sollten
                             spezifische Regeln erstellt werden, um den Datenverkehr zwischen dem internen Netzwerk, der
                             DMZ und dem externen Netzwerk zu steuern. In der Regel erlauben DMZ-Regeln eingehenden
-                            Verkehr nur zu den spezifischen Diensten in der DMZ und beschränken den Zugriff auf das
+                            Verkehr nur zu den <span class="gold">spezifischen</span> Diensten in der DMZ und
+                            beschränken
+                            den Zugriff auf das
                             interne Netzwerk. </p>
 
-                            Platzierung der Ressourcen: Stellen Sie die identifizierten Ressourcen in der DMZ bereit.
+                        <p>- <span class="gold">Platzierung der Ressourcen</span>: Stellen Sie die identifizierten
+                            Ressourcen in der DMZ bereit.
                             Dies können dedizierte Server, virtuelle Maschinen oder andere Geräte sein, je nach den
                             Anforderungen Ihrer Organisation. </p>
 
-                            Überwachung und Aktualisierung: Überwachen Sie regelmäßig den Datenverkehr in der DMZ und
-                            aktualisieren Sie die Sicherheitsrichtlinien entsprechend. Es ist wichtig, Schwachstellen zu
+                        <p>- <span class="gold">Überwachung und Aktualisierung</span>: Überwachen Sie regelmäßig den
+                            Datenverkehr in der DMZ und
+                            aktualisieren Sie die <span class="gold"></span>Sicherheitsrichtlinien entsprechend. Es ist
+                            wichtig, Schwachstellen zu
                             identifizieren und geeignete Maßnahmen zu ergreifen, um die Sicherheit zu gewährleisten.</p>
 
-                        <p>Die Einrichtung einer DMZ bietet mehrere Vorteile, darunter:
+                        <p class="under">Die Einrichtung einer DMZ bietet mehrere Vorteile, darunter: </p>
 
-                            Sicherheit: Eine DMZ isoliert öffentlich zugängliche Ressourcen vom internen Netzwerk,
-                            wodurch das Risiko von Angriffen auf sensible Daten und Systeme verringert wird.
+                        <p> - <span class="gold"> Sicherheit</span>: Eine DMZ isoliert öffentlich zugängliche Ressourcen
+                            vom internen Netzwerk,
+                            wodurch das Risiko von Angriffen auf sensible Daten und Systeme verringert wird.</p>
 
-                            Zugriffskontrolle: Durch die Verwendung von Firewalls und spezifischen Regeln können Sie den
+                        <p> - <span class="gold">Zugriffskontrolle</span>: Durch die Verwendung von Firewalls und
+                            spezifischen Regeln können Sie den
                             Datenverkehr in und aus der DMZ genau kontrollieren und unautorisierte Zugriffe verhindern.
+                        </p>
 
-                            Redundanz: Durch die Platzierung von öffentlich zugänglichen Diensten in der DMZ können Sie
+                        <p> - <span class="gold">Redundanz</span>: Durch die Platzierung von öffentlich zugänglichen
+                            Diensten in der DMZ können Sie
                             Redundanz und Hochverfügbarkeit gewährleisten, da diese Dienste von außen erreichbar
                             bleiben, auch wenn interne Netzwerkkomponenten ausfallen.</p>
 
                         <p>Es ist wichtig anzumerken, dass die genaue Einrichtung einer DMZ von den spezifischen
-                            Anforderungen und der Netzwerkinfrastruktur Ihrer Organisation abhängt. Es wird empfohlen,
-                            sich mit Netzwerkexperten und IT-Sicherheitsspezialisten abzustimmen, um eine sichere und
-                            effektive DMZ-Implementierung zu gewährleisten
+                            Anforderungen und der Netzwerkinfrastruktur Ihrer Organisation abhängt.
                         </p>
-                        
 
-                        
+
+
                         <p><a href="#zumSeitenanfang"
                                 class="sidelink link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover under"><strong>Spring
                                     zum Anfang</strong></a></p>
