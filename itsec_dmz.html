@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <title>DMZ - Demilitarisierte Zone</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\style.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <div class="row">
+            <img src="img\wissensbunkerbannerunderconstruction.png" class="img-fluid pe-0"
+                alt="Banner Wissensbunker schwarz" id="zumSeitenanfang">
+        </div>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main>
+            <div class="container-fluid mt-4">
+                <div class="row text-white">
+                    <div class="col-md-2 hyphens">
+                        <h3>DMZ</h3>
+
+                        <!--LINKS EINFÜGEN-->
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li style="margin-bottom: 3px;"><a href="index.html"
+                                    class="sidelink link-light  link-underline-opacity-25 link-underline-opacity-100-hover">Zur
+                                    Startseite</a></li>
+                            <li style="margin-bottom: 3px;"><a href="start_it-security.html"
+                                    class="sidelink link-light  link-underline-opacity-25 link-underline-opacity-100-hover">Zurück
+                                    zu IT-Security</a></li>
+                            <hr>
+                        </ul>
+                        <!--LINKS EINFÜGEN-->
+                    </div>
+                    <div
+                        class="col-12 order-first order-md-0 col-md-8 text-white blocksatz border border-light rounded grey-bg ms-1">
+                        <!--Contentfeld-->
+                        <h1>DMZ - Demilitarisierte Zone</h1>
+                        <br>
+
+                        <p><span class="gold"> Stateless Address Autoconfiguration (SLAAC)</span>
+                            ist ein Verfahren zur automatischen und
+                            zustandslosen Konfiguration von IPv6-Adressen an einem Netzwerk-Interface. Im Gegensatz zur
+                            klassischen IP-Autokonfiguration bei IPv4 wird bei SLAAC die IPv6-Adresse <span
+                                class="gold">nicht zentral
+                                vergeben oder gespeichert</span>. Stattdessen erzeugt sich der Host seine IPv6-Adresse
+                            selbst,
+                            indem er zusätzliche Informationen verwendet. SLAAC ist eine <span
+                                class="gold">Weiterentwicklung der
+                                Autokonfigurationstechniken</span> von IPv4, bei der IPv6-Router eine aktive Rolle
+                            spielen.</p>
+
+                        <p>Es gibt zwei Haupttypen von IPv6-Adressen, die mit SLAAC generiert werden: <span
+                                class="gold">Globale
+                                IPv6-Adressen</span> (Global Scope) und <span class="gold">link-lokale
+                                IPv6-Adressen</span> (Local Scope). Durch die
+                            Verwendung von Stateless Address Autoconfiguration kann ein IPv6-Host sowohl eine
+                            link-lokale Adresse als auch eine globale Adresse erzeugen. Dadurch bietet IPv6 den gleichen
+                            Komfort wie der Betrieb eines einfachen <span class="gold">DHCP-Servers</span>.</p>
+
+                        <p>Das Hauptziel von SLAAC besteht darin, dass ein Host <span class="gold">mindestens</span>
+                            eine link-lokale IPv6-Adresse
+                            erhält, um eine Verbindung innerhalb des lokalen Netzwerks herzustellen. Anschließend kann
+                            der Host mithilfe von SLAAC eine globale IPv6-Adresse erzeugen, um Verbindungen zum Internet
+                            herzustellen.</p>
+
+                        <p>Durch die automatische Konfiguration von IPv6-Adressen mittels SLAAC wird die
+                            Netzwerkkonfiguration vereinfacht und Hosts können sich effizient selbst adressieren, ohne
+                            dass eine manuelle Konfiguration oder ein DHCP-Server erforderlich ist. Dadurch wird die
+                            <span class="gold">Skalierbarkeit</span> und <span class="gold">Flexibilität</span> von IPv6
+                            verbessert und die Inbetriebnahme von Geräten in
+                            einem Netzwerk erleichtert.
+                        </p>
+                        <p class="under">Wie funktioniert SLAAC?</p>
+                        <p> 1. <span class="gold">Router Advertisement</span> (RA): IPv6-Router senden periodisch
+                            sogenannte Router
+                            Advertisement-Nachrichten an das lokale Netzwerk. Diese Nachrichten enthalten wichtige
+                            Informationen für die Hosts im Netzwerk, einschließlich des Präfixes, das für die Bildung
+                            der IPv6-Adresse verwendet wird.</p>
+
+                        <p>2. <span class="gold">Network Prefix</span>: Der Router gibt den Hosts im Netzwerk ein Präfix
+                            bekannt, das für die
+                            Bildung der IPv6-Adresse verwendet wird. Das Präfix definiert den Netzwerkanteil der
+                            Adresse.</p>
+
+                        <p>3. <span class="gold">Interface Identifier</span>: Der Host generiert den Interface
+                            Identifier, der den individuellen
+                            Teil der IPv6-Adresse darstellt. Hierfür gibt es verschiedene Möglichkeiten: <br><br>
+
+                            - <span class="gold">EUI-64</span>: Der Interface Identifier kann aus der 48-Bit-MAC-Adresse
+                            des Netzwerkadapters
+                            abgeleitet werden. Dabei werden die ersten 24 Bits der MAC-Adresse umgedreht und ein fester
+                            Wert (0xFFFE) eingefügt.<br><br>
+
+                            - <span class="gold">Random</span>: Alternativ kann der Interface Identifier auch zufällig
+                            generiert werden, ohne Bezug
+                            zur MAC-Adresse.</p>
+
+                        <p>4. <span class="gold">Zusammensetzung der Adresse</span>: Der Host kombiniert das empfangene
+                            Präfix mit dem generierten
+                            Interface Identifier, um die vollständige IPv6-Adresse zu bilden.</p>
+
+                        <p>5. <span class="gold">DAD</span> (Duplicate Address Detection): Bevor der Host die
+                            konfigurierte IPv6-Adresse verwendet,
+                            führt er eine Duplikaterkennung durch, um sicherzustellen, dass keine andere Maschine im
+                            Netzwerk bereits die gleiche Adresse verwendet.</p>
+
+                        <p>6. <span class="gold">Adresskonfiguration</span>: Nach erfolgreicher Duplikaterkennung ist
+                            die IPv6-Adresse des Hosts
+                            konfiguriert und kann für die Netzwerkkommunikation verwendet werden.</p>
+
+                        <p>Es ist wichtig zu beachten, dass SLAAC in Kombination mit Router Advertisements (RA) und
+                            Neighbor Discovery Protocol (NDP) arbeitet, um die Autoconfiguration und Kommunikation im
+                            IPv6-Netzwerk zu ermöglichen. Router Advertisement-Nachrichten enthalten neben dem Präfix
+                            auch andere wichtige Informationen wie die Router-Präferenz und die Router Lifetime, die
+                            angeben, wie lange ein Präfix gültig ist.</p>
+                        <p><a href="#zumSeitenanfang"
+                                class="sidelink link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover under"><strong>Spring
+                                    zum Anfang</strong></a></p>
+
+                    </div>
+                    <div class="col-md-2">
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="text-center text-lg-start text-muted">
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            </section>
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase text-white fw-bold mb-4">
+                                Wissensbunker.de
+                            </h6>
+                            <p class="text-white ">
+                                "Man sollte nie soviel zu tun haben, dass man zum Nachdenken keine Zeit mehr hat." <br>-
+                                Georg Christoph Lichtenberg
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase text-white fw-bold mb-4">
+                                Links
+                            </h6>
+                            <p>
+                                <a href="start_hintergrund.html" class="text-reset">Warum tun wir das?</a>
+                            </p>
+                            <p>
+                                <a href="start_impressum.html" class="text-reset">Impressum</a>
+                            </p>
+                            <p>
+                                <a href="start_datenschutzerklärung.html" class="text-reset">Datenschutzerklärung</a>
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase text-white fw-bold mb-4">Kontakt</h6>
+
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                webmaster@wissensbunker.de
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <script src="https://kit.fontawesome.com/276d8ad1a4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
